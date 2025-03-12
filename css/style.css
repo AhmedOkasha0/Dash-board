@@ -6,6 +6,7 @@
 }
 body{
     background-color: #001;
+    display: flex;
 }
 .image{
 width: 50px;    
@@ -31,6 +32,9 @@ flex-shrink: 0;
  .profile h2{
     font-size: 30px;
     text-transform: capitalize;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
  }
 
@@ -54,7 +58,6 @@ ul li a{
     padding: 10px;
     margin: 5px 0;
     border-radius: 8px;
-    /* border: 5px solid white; */
     transition-duration: 0.5s;
 }
 ul li a:hover{
@@ -70,11 +73,84 @@ ul li a i {
     font-size: 20px;
 }
 .menu:hover{
-    width: 260px;
+    width: 300px;
 }
 .menu_item{
     background-color: #ffffff52;
     transition-duration: 0.5s;
 }
+.content{
+    width: 100%;
+    margin: 10px;
+}
+.title_info{
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 6px;
+    height: 20px;
+    background-color: #0080ff;
+}
+.data_info{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.data_info .box{
+    background-color: #123;
+    height: 150px;
+    flex-grow: 1;
+    flex-basis: 150px; /* use this when i user flex to gave width value*/
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.data_info.box i{
+    font-size:40px;
+
+}
+.data{
+    text-align: center;
+}
+.data_info .box .data span{
+    font-size: 20px;
+}
+
+.product_info{
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 6px;
+    height: 20px;
+    background-color: #0080ff;
+}
+table{
+    padding-top: 12px;
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+}
+td ,th{
+    background-color: #123;
+    height: 40px;
+    border-radius: 8px;
+}
+th{
+    background-color: #0080ff;
+}
+td :hover{
+    background-color: #ffffff52;
+}
+
 
 
